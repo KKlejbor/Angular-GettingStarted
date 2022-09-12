@@ -13,6 +13,8 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     product: IProduct | undefined;
     subscritpion!: Subscription;
     errorMessage: string ="";
+    imageWidth: number = 200;
+    imageMargin: number = 2;
     
     constructor(private route: ActivatedRoute,
                 private router: Router,
