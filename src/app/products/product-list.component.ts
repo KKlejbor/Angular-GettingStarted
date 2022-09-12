@@ -90,6 +90,6 @@ export class ProductListComponent implements OnInit{
       }
 
       ngOnInit(): void {
-        console.log("in OnInit");
+        this.filteredProducts = [... this.products];
       }
 }
